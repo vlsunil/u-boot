@@ -369,4 +369,12 @@ config EFI_ESRT
 	help
 	  Enabling this option creates the ESRT UEFI system table.
 
+config EFI_RISCV_BOOT_PROTOCOL
+	bool "RISCV_EFI_BOOT_PROTOCOL support"
+	default y
+	depends on RISCV
+	help
+	  Provide a RISCV_EFI_BOOT_PROTOCOL implementation on RISC-V
+	  platforms.
+
 endif
